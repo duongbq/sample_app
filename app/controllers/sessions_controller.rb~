@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       sign_in user
       
       if params[:session][:remember_me] == '1'
-				remember_email user      	
+				remember_user user      	
       end      
       # redirect_to user
       redirect_back_or user
